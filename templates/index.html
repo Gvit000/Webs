@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Максим</title>
+    <title>Максим Main Page</title>
 </head>
 <body>
-    
+    <h1>Select a page:</h1>
+    {% for name in button_names %}
+        <button><a href="{{ url_for(name) }}">{{ name }}</a></button>
+    {% endfor %}
 </body>
 </html>
